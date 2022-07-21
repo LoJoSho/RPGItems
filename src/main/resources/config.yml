@@ -1,0 +1,8 @@
+settings:
+  allItemsUnbreakable: true
+  hideAllUnbreakable: true
+  hideAllAttributes: true
+
+itemLayout:
+  - "{LORE}"
+  - "{ITEMTYPE}"

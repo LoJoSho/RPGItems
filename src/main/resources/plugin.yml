@@ -1,0 +1,12 @@
+name: RPGItems
+version: '${version}'
+main: me.lojosho.rpgitems.RPGItemsPlugin
+api-version: 1.19
+authors: [ LoJoSho ]
+description: A Minecraft Plugin for RPG items
+load: STARTUP
+depend:
+  - eco
+commands:
+  rpgitems:
+    description: Base command

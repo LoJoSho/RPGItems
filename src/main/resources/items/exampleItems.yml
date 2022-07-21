@@ -1,0 +1,20 @@
+exampleItem:
+  material: PAPER
+  display: "Example Item!"
+  model: 1
+  lore:
+    - " This is some lore!"
+  unbreakable: true
+  effects:
+    - id: bleed
+      args:
+        damage: 2
+        amount: 5
+        interval: 10
+        chance: 25
+      triggers:
+        - melee_attack
+  conditions:
+    - id: above_health_percent
+      args:
+        percent: 98
