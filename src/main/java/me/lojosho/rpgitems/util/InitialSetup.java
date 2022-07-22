@@ -1,4 +1,4 @@
-package me.lojosho.rpgitems.items.utils;
+package me.lojosho.rpgitems.util;
 
 import com.willfp.eco.core.config.TransientConfig;
 import com.willfp.eco.core.config.interfaces.Config;
@@ -53,5 +53,4 @@ public class InitialSetup {
             }
         }
     }
-
 }
