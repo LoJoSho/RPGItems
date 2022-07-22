@@ -5,6 +5,8 @@ exampleItem:
   lore:
     - " This is some lore!"
   unbreakable: true
+  stats:
+    physicalattack: 1
   effects:
     - id: bleed
       args:
