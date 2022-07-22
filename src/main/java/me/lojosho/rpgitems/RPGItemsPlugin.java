@@ -5,7 +5,9 @@ import com.willfp.eco.core.display.DisplayModule;
 import com.willfp.libreforge.LibReforgePlugin;
 import me.lojosho.rpgitems.commands.CommandRPGItems;
 import me.lojosho.rpgitems.display.DisplayHandler;
-import me.lojosho.rpgitems.items.utils.InitialSetup;
+import me.lojosho.rpgitems.items.stat.Stat;
+import me.lojosho.rpgitems.items.stat.Stats;
+import me.lojosho.rpgitems.util.InitialSetup;
 import me.lojosho.rpgitems.listener.PlayerListeners;
 import me.lojosho.rpgitems.util.RPGItemsLookup;
 import org.bukkit.NamespacedKey;
@@ -31,6 +33,13 @@ public final class RPGItemsPlugin extends LibReforgePlugin {
         instance = this;
         createConfigYml();
         InitialSetup.startup();
+    }
+
+    @Override
+    public void handleReloadAdditional() {
+        for (Stat stat : Stats.values()){
+            this.getEventManager().registerListener(stat);
+        }
     }
 
     @Override

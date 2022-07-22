@@ -36,9 +36,8 @@ public class DisplayHandler extends DisplayModule {
         itemMeta.setLore(ProcessLore.processLore(item));
 
         if (SettingManager.hideAllUnbreakable()) itemMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-        if (SettingManager.hideAllUnbreakable()) itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+        if (SettingManager.hideAllAttributes()) itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 
         itemStack.setItemMeta(itemMeta);
     }
-
 }

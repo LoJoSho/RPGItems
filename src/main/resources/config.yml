@@ -4,5 +4,6 @@ settings:
   hideAllAttributes: true
 
 itemLayout:
-  - "{LORE}"
-  - "{ITEMTYPE}"
+  - "!LORE"
+  - "!ITEMTYPE"
+  - "!STAT:physicalattack"

@@ -5,7 +5,7 @@ import com.willfp.eco.core.command.impl.PluginCommand;
 import me.lojosho.rpgitems.RPGItemsPlugin;
 import me.lojosho.rpgitems.items.RPGItem;
 import me.lojosho.rpgitems.items.RPGItems;
-import me.lojosho.rpgitems.items.utils.InitialSetup;
+import me.lojosho.rpgitems.util.InitialSetup;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
