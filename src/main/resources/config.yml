@@ -7,3 +7,7 @@ itemLayout:
   - "!LORE"
   - "!ITEMTYPE"
   - "!STAT:physicalattack"
+  - "!STAT:accuracy"
+  - "!STAT:attackspeed"
+  - "!STAT:health"
+  - "!STAT:defense"

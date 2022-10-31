@@ -35,7 +35,7 @@ public class Stat implements Listener {
                 this,
                 RPGItemsPlugin.getInstance$eco_api()
         );
-        this.display = this.config.getFormattedString("display");
+        this.display = this.config.getString("display");
 
         Stats.addNewStat(this);
     }

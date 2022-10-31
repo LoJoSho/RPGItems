@@ -63,16 +63,16 @@ public class CommandRPGItems extends PluginCommand {
             if (sender instanceof Player) {
                 player = ((Player) sender).getPlayer();
             } else {
-                if (args.size() < 3) {
+                if (args.size() < 4) {
                     sender.sendMessage("Improper Arguments");
                     return;
                 }
             }
 
-            if (args.size() >= 2) {
+            if (args.size() >= 3) {
                 amount = Integer.parseInt(args.get(2));
             }
-            if (args.size() >= 3) {
+            if (args.size() >= 4) {
                 player = Bukkit.getPlayer(args.get(3));
             }
 

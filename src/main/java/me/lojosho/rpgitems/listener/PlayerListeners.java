@@ -70,5 +70,6 @@ public class PlayerListeners extends PluginDependent<EcoPlugin> implements Liste
     private void refreshPlayer(@NotNull final Player player) {
         //ReforgeLookup.clearCache(player);
         LibReforgeUtils.updateEffects(player);
+
     }
 }

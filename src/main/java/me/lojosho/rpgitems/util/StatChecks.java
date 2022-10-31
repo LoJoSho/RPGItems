@@ -9,12 +9,24 @@ import org.jetbrains.annotations.NotNull;
 
 public class StatChecks {
 
-    public static boolean mainHand(@NotNull Player player,
+    public static boolean getMainHand(@NotNull Player player,
                                    @NotNull Stat stat) {
-
+        if (player.getInventory().getItemInMainHand() == null) return false;
+        if (!player.getInventory().getItemInMainHand().hasItemMeta()) return false;
         RPGItem item = RPGItems.getRPGItem(player.getInventory().getItemInMainHand());
         if (!item.hasStat(stat)) return false;
         return true;
+    }
+
+    public static double getMainHandStat(@NotNull Player player,
+                                         @NotNull Stat stat) {
+        double amount = 0;
+        if (player.getInventory().getItemInMainHand() != null) return amount;
+        if (!player.getInventory().getItemInMainHand().hasItemMeta()) return amount;
+        if (RPGItems.isRPGItem(player.getInventory().getItemInMainHand())) {
+            amount = amount + RPGItems.getRPGItem(player.getInventory().getItemInMainHand()).getStatAmount(stat);
+        }
+        return amount;
     }
 
     public static double getAllBodyStat(@NotNull Player player,

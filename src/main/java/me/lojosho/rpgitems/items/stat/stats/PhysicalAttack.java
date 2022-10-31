@@ -22,9 +22,8 @@ public class PhysicalAttack extends Stat {
         if (!StatChecks.getIfBodyHasStat(player, this)) return;
 
         double damage = StatChecks.getAllBodyStat(player, this);
+        event.setDamage(damage);
 
-        event.setDamage(event.getDamage() + damage);
-
-        player.sendMessage("This stat has activated!");
+        //player.sendMessage("This stat has activated!");
     }
 }

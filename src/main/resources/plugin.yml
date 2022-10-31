@@ -1,12 +1,15 @@
 name: RPGItems
 version: '${version}'
 main: me.lojosho.rpgitems.RPGItemsPlugin
-api-version: 1.19
+api-version: 1.18
 authors: [ LoJoSho ]
 description: A Minecraft Plugin for RPG items
 load: STARTUP
 depend:
   - eco
+softdepend:
+  - EcoSkills
+  - MythicMobs
 commands:
   rpgitems:
     description: Base command

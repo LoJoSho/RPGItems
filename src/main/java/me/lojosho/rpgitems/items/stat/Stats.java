@@ -3,7 +3,7 @@ package me.lojosho.rpgitems.items.stat;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 import com.google.common.collect.ImmutableList;
-import me.lojosho.rpgitems.items.stat.stats.PhysicalAttack;
+import me.lojosho.rpgitems.items.stat.stats.*;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,6 +14,10 @@ public class Stats {
     public static BiMap<String, Stat> BY_KEY = HashBiMap.create();
 
     public static Stat PHYSICALATTACK = new PhysicalAttack();
+    public static Stat HEALTH = new Health();
+    public static Stat DEFENSE = new Defense();
+    public static Stat ACCURACY = new Accuracy();
+    public static Stat ATTACKSPEED = new AttackSpeed();
 
     public static void addNewStat(@NotNull final Stat stat) {
         BY_KEY.remove(stat.statName);
